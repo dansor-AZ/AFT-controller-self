@@ -27,12 +27,12 @@ module "vpc" {
 module "aft_pipeline" {
   source = "aws-ia/control_tower_account_factory/aws"
   # Required Variables
-  ct_management_account_id = 145306892140
-  log_archive_account_id = 091833507420
-  audit_account_id = 393160057906
-  aft_management_account_id = 758391798493
-  ct_home_region = ap-southeast-2
-  tf_backend_secondary_region = ap-southeast-1
+  ct_management_account_id = "145306892140"
+  log_archive_account_id = "091833507420"
+  audit_account_id = "393160057906"
+  aft_management_account_id = "758391798493"
+  ct_home_region = "ap-southeast-2"
+  tf_backend_secondary_region = "ap-southeast-1"
   
   # Terraform variables
   terraform_version = "0.15.5"
