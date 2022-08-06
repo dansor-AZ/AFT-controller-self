@@ -42,6 +42,15 @@ module "aft_pipeline" {
   vcs_provider = "github"
   account_request_repo_name = "vgn-1/aft-account-request"
   account_request_repo_branch = "main"
+  
+  account_customizations_repo_name = "vgn-1/aft-account-customizations"
+  account_customizations_repo_branch = "main"
+  
+  global_customizations_repo_name = "vgn-1/aft-global-customizations"
+  global_customizations_repo_branch = "main"
+  
+  account_provisioning_customizations_repo_name = "vgn-1/aft-account-provisioning-customizations"
+  account_provisioning_customizations_repo_branch = "main"
 
   # AFT Feature flags
   aft_feature_cloudtrail_data_events = false
