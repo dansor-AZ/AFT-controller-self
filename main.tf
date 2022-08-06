@@ -34,7 +34,7 @@ module "aft_pipeline" {
   ct_home_region = "ap-southeast-2"
   tf_backend_secondary_region = "ap-southeast-1"
   
-  # Terraform variables
+  # Terraform variables 
   terraform_version = "0.15.5"
   terraform_distribution = "oss"
     
