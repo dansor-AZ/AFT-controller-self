@@ -25,8 +25,8 @@ module "vpc" {
 }
 
 module "aft_pipeline" {
-  source = "github.com/aws-ia/terraform-aws-control_tower_account_factory?ref=1.3.3"
-  #source = "aws-ia/control_tower_account_factory/aws"
+  #source = "github.com/aws-ia/terraform-aws-control_tower_account_factory?ref=1.3.3"
+  source = "aws-ia/control_tower_account_factory/aws"
   
   # Required Variables
   ct_management_account_id = "145306892140"
