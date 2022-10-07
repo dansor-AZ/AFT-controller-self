@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "ap-southeast-2"
+  region = "us-east-1"
 
   default_tags {
     tags = {
@@ -29,12 +29,12 @@ module "aft_pipeline" {
   source = "aws-ia/control_tower_account_factory/aws"
   
   # Required Variables
-  ct_management_account_id = "411550323246"
-  log_archive_account_id = "081485020675"
-  audit_account_id = "256556417139"
-  aft_management_account_id = "585745732584"
+  ct_management_account_id = "412634494108"
+  log_archive_account_id = "744322718174"
+  audit_account_id = "128980538509"
+  aft_management_account_id = "937699266191"
   ct_home_region = "us-east-1"
-  tf_backend_secondary_region = "ap-southeast-2"
+  tf_backend_secondary_region = "us-east-2"
   
   # Terraform variables 
   terraform_version = "0.15.5"
@@ -42,16 +42,16 @@ module "aft_pipeline" {
     
   # VCS variables
   vcs_provider = "github"
-  account_request_repo_name = "vgn-1/aft-account-request"
+  account_request_repo_name = "dansor-AZ/aft-account-request"
   account_request_repo_branch = "main"
   
-  account_customizations_repo_name = "vgn-1/aft-account-customizations"
+  account_customizations_repo_name = "dansor-AZ/aft-account-customizations"
   account_customizations_repo_branch = "main"
   
-  global_customizations_repo_name = "vgn-1/aft-global-customizations"
+  global_customizations_repo_name = "dansor-AZ/aft-global-customizations"
   global_customizations_repo_branch = "main"
   
-  account_provisioning_customizations_repo_name = "vgn-1/aft-account-provisioning-customizations"
+  account_provisioning_customizations_repo_name = "dansor-AZ/aft-account-provisioning-customizations"
   account_provisioning_customizations_repo_branch = "main"
 
   # AFT Feature flags
