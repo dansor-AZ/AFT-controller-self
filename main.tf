@@ -3,7 +3,8 @@ provider "aws" {
 
   default_tags {
     tags = {
-      hashicorp-learn = "module-use"
+      hashicorp-learn = "module-use",
+      auto-delete = "no"
     }
   }
 }
